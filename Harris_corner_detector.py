@@ -72,7 +72,7 @@ def adding_point_to_oriImg(img, local_max):
     return detected_img
 
 def main():
-    img = cv2.imread('testdata/ex.png')
+    img = cv2.imread('lina.png')
     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.float64)
 
     response = detect_harris_corners(img_gray)
